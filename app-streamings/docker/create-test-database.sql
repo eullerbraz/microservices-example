@@ -1,0 +1,1 @@
+CREATE DATABASE streamings_test;
