@@ -15,6 +15,13 @@
       "when": 1749135788836,
       "tag": "0001_sleepy_yellow_claw",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1749145262637,
+      "tag": "0002_overconfident_silhouette",
+      "breakpoints": true
     }
   ]
 }

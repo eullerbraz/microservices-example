@@ -1,0 +1,1 @@
+ALTER TABLE "streamings-progress" ADD CONSTRAINT "streamings-progress_user_id_streaming_id_pk" PRIMARY KEY("user_id","streaming_id");
