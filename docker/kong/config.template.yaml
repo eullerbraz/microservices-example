@@ -2,22 +2,24 @@ _format_version: '3.0'
 _transform: true
 
 services:
-  - name: users
-    url: http://host.docker.internal:3333
-    protocol: http
-    host: host.docker.internal
-    port: 3333
-    path: /
-    routes:
-      - name: api-users
-        protocols:
-          - http
-          - https
-        paths:
-          - /users
+  # - name: users
+  #   # url: http://host.docker.internal:3333
+  #   url: ${USERS_SERVICE_URL}
+  #   protocol: http
+  #   host: host.docker.internal
+  #   port: 3333
+  #   path: /
+  #   routes:
+  #     - name: api-users
+  #       protocols:
+  #         - http
+  #         - https
+  #       paths:
+  #         - /users
 
   - name: streamings
-    url: http://host.docker.internal:3334
+    # url: http://host.docker.internal:3334
+    url: ${STREAMINGS_SERVICE_URL}
     protocol: http
     host: host.docker.internal
     port: 3334

@@ -18,14 +18,14 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 RUN addgroup --system --gid 1001 nodejs
-RUN addstreaming --system --uid 1001 api
+RUN adduser --system --uid 1001 api
 
 RUN chown api:nodejs .
 
 COPY --chown=api:nodejs . .
 COPY --from=deps /app/node_modules ./node_modules
 
-STREAMING api
+USER api
 
 EXPOSE 3334
 
